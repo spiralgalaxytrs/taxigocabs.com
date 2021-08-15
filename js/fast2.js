@@ -18,9 +18,9 @@ function book() {
     var strText7 = document.getElementById("cars").value;
     var strText8 = document.getElementById("ser").value;
    
-    var Clink="https://droptaxiindia.com";
+    var Clink="https://taxigocabs.com";
     var CPh="99409 80956";
-    var Cname="Drop Taxi India";
+    var Cname="Taxigo Cabs";
     //calcRoute()
     if((strText7=="Sedan") && (strText8=="One-Way"))
     {rate=sedano;}
@@ -46,9 +46,9 @@ function book() {
     var carTypemsg = strText7[0]=='P'?strText7.replace('P',"Prime "):strText7;
      if(strText8=="One-Way"){
         console.log("result set in one way");
-        result = 'Hi '+ strText + '%0AThanks for booking with droptaxiindia.com' +'%0ABooking Details:  '+ '%0ABooking ID:  ' + CID +  '%0APhone Number: ' + strText1 +'%0APickup Location: ' + strText2+  '%0ADrop Location: ' + strText3 + '%0APickup Date: ' + strText4 + '%0APickup Time: ' + strText6 +'%0AService: ' + strText8 + '%0ACars: ' + carTypemsg+"%0APrice:"+rate+"%0ATotalKms: "+n + '%0A Charges will apply for extra KM' + '%0AToll, State, Parking, %0ALuggage charges extra' + '%0ADriver Batta included'+ '%0AFor any questions please contact:  99409 80956' ;
+        result = 'Hi '+ strText + '%0AThanks for booking with taxigocabs.com' +'%0ABooking Details:  '+ '%0ABooking ID:  ' + CID +  '%0APhone Number: ' + strText1 +'%0APickup Location: ' + strText2+  '%0ADrop Location: ' + strText3 + '%0APickup Date: ' + strText4 + '%0APickup Time: ' + strText6 +'%0AService: ' + strText8 + '%0ACars: ' + carTypemsg+"%0APrice:"+rate+"%0ATotalKms: "+n + '%0A Charges will apply for extra KM' + '%0AToll, State, Parking, %0ALuggage charges extra' + '%0ADriver Batta included'+ '%0AFor any questions please contact:  99409 80956' ;
     }else{
-        result = 'Hi '+ strText + '%0AThanks for booking with droptaxiindia.com' +'%0ABooking Details:  '+ '%0ABooking ID:  ' + CID + '%0APhone Number: ' + strText1 +'%0APickup Location: ' + strText2+  '%0ADrop Location: ' + strText3 + '%0APickup Date: ' + strText4 +'%0ADrop Date:'+ strText9 + '%0APickup Time: ' + strText6 +'%0AService: ' + strText8 + '%0ACars: ' + strText7+"%0APrice:"+rate+"%0ATotalKms: "+n + '%0AExtra Km:  15-20/km based on car type' + '%0AToll, State, Parking, %0ALuggage charges extra' + '%0ADriver Batta included'+ '%0AFor any questions please contact:  99409 80956';
+        result = 'Hi '+ strText + '%0AThanks for booking with taxigocabs.com' +'%0ABooking Details:  '+ '%0ABooking ID:  ' + CID + '%0APhone Number: ' + strText1 +'%0APickup Location: ' + strText2+  '%0ADrop Location: ' + strText3 + '%0APickup Date: ' + strText4 +'%0ADrop Date:'+ strText9 + '%0APickup Time: ' + strText6 +'%0AService: ' + strText8 + '%0ACars: ' + strText7+"%0APrice:"+rate+"%0ATotalKms: "+n + '%0AExtra Km:  15-20/km based on car type' + '%0AToll, State, Parking, %0ALuggage charges extra' + '%0ADriver Batta included'+ '%0AFor any questions please contact:  99409 80956';
     }
     console.log(result);
     document.getElementById("bookingForm").addEventListener("submit", (e) => {
